@@ -1,38 +1,808 @@
-.App {
-  text-align: center;
+body{
+  margin-top: 80px;
+}
+.myjumbotron{
+
+  padding: 2rem 1rem;
+
+  margin-bottom: 2rem;
+
+  background-color: #02020291;
+
+  border-radius: .3rem;
+
+}
+.active{
+  color: #337ab7;
+  font-weight: bold;
+}
+.mycarrousel .carousel-item img{
+
+  height: 520px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mycarousel-caption{
+
+  text-align: left !important;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+footer{
+
+  background-color: #337ab7;
+
+  font-size: 1rem;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+}
+
+
+
+.title{
+
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.text{
+
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.blue{
+
+  color: #337ab7;
+
+}
+
+.white{
+
+  color: #ffffff;
+
+}
+
+footer a{
+
+  text-decoration: none;
+
+  color: #fff;
+
+}
+
+@media only screen and (min-width: 990px){
+
+  .carousel-item img{
+
+      width: 100%;
+
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .myhr{
 
-.App-link {
-  color: #61dafb;
-}
+      border-top: 0.8px solid rgb(0, 47, 255);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar{
+
+      padding: 2.5rem 1rem;
+
   }
+
+  nav{
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      height: 3em;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      padding: 12px 18px;
+
+      /* transition: background-color 0.4s ease-out; */
+
+  }
+
+  .nav-link{
+
+      color: #3e77fa !important;
+
+  }
+
+  a.nav-link:hover{
+
+      color:#464545 !important;
+
+  }
+
+    
+
 }
+
+
+
+@media only screen and (max-width: 990px){
+
+  /* .carousel-item img{
+
+      height: 100%;
+
+  } */
+
+  .myhr{
+
+      border-top: 0.8px solid rgb(0, 47, 255);
+
+  }
+
+  .navbar{
+
+      padding: 0.5rem 1rem;
+
+     }
+
+    .nav-link{
+
+      color: #575757 !important;
+
+  }
+
+  a.nav-link:hover{
+
+      color:rgb(24, 23, 23) !important;
+
+  }
+
+    
+
+}
+
+.carousel-control-prev-icon,
+
+.carousel-control-next-icon {
+
+height: 100px;
+
+width: 100px;
+
+background-image: none;
+
+}
+
+
+
+.carousel-control-next-icon:after
+
+{
+
+content: '+';
+
+font-size: 55px;
+
+color: rgb(134, 150, 243);
+
+}
+
+
+
+.carousel-control-prev-icon:after {
+
+content: '+';
+
+font-size: 55px;
+
+color: rgb(134, 150, 243);
+
+}
+
+.black_box{
+
+  background: rgb(0, 0, 0);
+
+  height: 20px;
+
+  width: 20px;
+
+  border-radius: 50% ;
+
+  border: 2px solid rgb(66, 66, 66);
+
+  margin: 0.3rem;
+
+}
+
+.red_box{
+
+  background: #c62828;
+
+  height: 20px;
+
+  width: 20px;
+
+  border-radius: 50% ;
+
+  border: 2px solid rgb(66, 66, 66);
+
+  margin: 0.3rem;
+
+}
+
+.blue_box{
+
+  background: #337ab7;
+
+  height: 20px;
+
+  width: 20px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgb(66, 66, 66);
+
+  margin: 0.3rem;
+
+}
+
+.grey_box{
+
+  background: #424242;
+
+  height: 20px;
+
+  width: 20px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgb(66, 66, 66);
+
+  margin: 0.3rem;
+
+}
+
+.mycard{
+
+  border: 1px solid #a7a7a7a1;
+
+  border-radius: 30px;
+
+}
+
+.mycard-text{
+
+  font-size: 0.8rem;
+
+  color: rgb(98, 98, 98);
+
+}
+
+.mydisplay-4{
+
+  font-size: 2rem;
+
+  font-weight: 300;
+
+  line-height: 1.2;
+
+}
+
+
+
+.parallax {
+
+  /* The image used */
+
+  background-image: url("/img/1920.jpg") ;
+
+
+
+  /* Set a specific height */
+
+  min-height: 500px; 
+
+
+
+  /* Create the parallax scrolling effect */
+
+  background-attachment: fixed;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  background-size:cover;
+
+}
+
+
+
+.bg_jumbotron{
+
+    background-color: rgba(0, 0, 0, 0.513) !important;
+
+    color: rgb(255, 255, 255) !important;
+
+    border-radius: 10px;
+
+    margin: 50px auto;
+
+}
+
+/* gallery */
+
+
+
+.gallery {
+
+  -webkit-column-count: 3;
+
+  -moz-column-count: 3;
+
+  column-count: 3;
+
+  -webkit-column-width: 33%;
+
+  -moz-column-width: 33%;
+
+  column-width: 33%; }
+
+  .gallery .pics {
+
+  -webkit-transition: all 350ms ease;
+
+  transition: all 350ms ease; }
+
+  .gallery .animation {
+
+  -webkit-transform: scale(1);
+
+  -ms-transform: scale(1);
+
+  transform: scale(1); }
+
+  
+
+  @media (max-width: 450px) {
+
+  .gallery {
+
+  -webkit-column-count: 1;
+
+  -moz-column-count: 1;
+
+  column-count: 1;
+
+  -webkit-column-width: 100%;
+
+  -moz-column-width: 100%;
+
+  column-width: 100%;
+
+  }
+
+  }
+
+  
+
+  @media (max-width: 400px) {
+
+      .btn.filter {
+
+      padding-left: 1.1rem;
+
+      padding-right: 1.1rem;
+
+      }
+
+  }
+
+
+
+ #products .card img{
+
+     width: 100vw;
+
+     height: 250px;
+
+     object-fit: cover;
+
+ }
+
+ /* .mycarousel .carousel-item img{
+
+  width: 100vw;
+
+  height: 900px;
+
+  object-fit: cover;
+
+ }   */
+
+
+
+ 
+
+   
+
+  .list-inline-item a i{
+
+      color: #2e1ae2;
+
+  }
+
+   
+
+  #products_services .card img{
+
+      width: 100%;
+
+      height: 170px;
+
+      object-fit: cover;
+
+  }
+
+
+
+  .gallery img{
+
+      transition: transform .2s; /* Animation */
+
+      overflow: hidden;
+
+      cursor: pointer;
+
+
+
+  }
+
+  .gallery img:hover{
+
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+  }
+
+
+
+  
+
+  /* The Modal (background) */
+
+  .own_modal {
+
+      display: none; /* Hidden by default */
+
+      position: fixed; /* Stay in place */
+
+      z-index: 1100; /* Sit on top */
+
+      padding-top: 50px; /* Location of the box */
+
+      left: 0;
+
+      top: 0;
+
+      width: 100vw; /* Full width */
+
+      height: 100vh; /* Full height */
+
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+      overflow-x: hidden;
+
+      overflow-y: hidden;
+
+      outline: 0;
+
+  }
+
+  .own_modal-content {
+
+      margin: auto;
+
+      display: block;
+
+      max-width: 100%;
+
+      height: 90%;
+
+    }
+
+
+
+    /* Add Animation */
+
+  .own_modal-content, #caption {  
+
+      -webkit-animation-name: zoom;
+
+      -webkit-animation-duration: 0.6s;
+
+      animation-name: zoom;
+
+      animation-duration: 0.6s;
+
+  }
+
+
+
+  @-webkit-keyframes zoom {
+
+      from {-webkit-transform:scale(0)} 
+
+      to {-webkit-transform:scale(1)}
+
+  }
+
+
+
+  @keyframes zoom {
+
+      from {transform:scale(0)} 
+
+      to {transform:scale(1)}
+
+  }
+
+
+
+  /* The Close Button */
+
+  .close {
+
+      position: absolute;
+
+      top: 15px;
+
+      right: 35px;
+
+      color: #f1f1f1;
+
+      font-size: 40px;
+
+      font-weight: bold;
+
+      transition: 0.3s;
+
+  }
+
+  
+
+  .close:hover,
+
+  .close:focus {
+
+      color: #bbb;
+
+      text-decoration: none;
+
+      cursor: pointer;
+
+  }
+
+  
+
+  /* 100% Image Width on Smaller Screens */
+
+  @media only screen and (max-width: 700px){
+
+      .modal-content {
+
+      width: 100%;
+
+      }
+
+  }
+
+
+
+
+
+  /* video */
+
+  .header_video {
+
+      position: relative;
+
+      background-color: black;
+
+      height: 75vh;
+
+      min-height: 25rem;
+
+      width: 100%;
+
+      overflow: hidden;
+
+    }
+
+    
+
+    .header_video video {
+
+      position: absolute;
+
+      top: 50%;
+
+      left: 50%;
+
+      min-width: 100%;
+
+      min-height: 100%;
+
+      width: auto;
+
+      height: auto;
+
+      z-index: 0;
+
+      -ms-transform: translateX(-50%) translateY(-50%);
+
+      -moz-transform: translateX(-50%) translateY(-50%);
+
+      -webkit-transform: translateX(-50%) translateY(-50%);
+
+      transform: translateX(-50%) translateY(-50%);
+
+    }
+
+    
+
+    .header_video .container {
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+   .header_video .overlay {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      height: 100%;
+
+      width: 100%;
+
+      background-color: black;
+
+      opacity: 0.5;
+
+      z-index: 1;
+
+    }
+
+    
+
+    @media (pointer: coarse) and (hover: none) {
+
+      /* .header_video {
+
+        background: url('/img/proyect_background.jpg') black no-repeat center center scroll;
+
+      } */
+
+      /* .header_video video {
+
+        display: none;
+
+      } */
+
+    }
+
+    #products .card .myimg {
+
+      width: 30%;
+
+      height: 85px;
+
+      object-fit: contain;
+
+      float: left;
+
+  }
+
+
+
+    .mydisplay-4 {
+
+      font-size: 1.8rem;
+
+      font-weight: 300;
+
+      line-height: 0.5;
+
+  }
+
+    .mydisplay-5 {
+
+      font-size: 1.2rem;
+
+      font-weight: 300;
+
+      line-height: 0.5;
+
+  }
+
+  .link-unstyled, .link-unstyled:link {
+
+      color: inherit;
+
+      text-decoration: inherit;
+
+    }
+
+    .link-unstyled:hover{
+
+        color: #33b76e;
+
+    }
+
+    .parallax2 { 
+      /* The image used */
+      background-image: url("/img/slider/parallax2.jpg");
+    
+      /* Set a specific height */
+      height: 100%; 
+      width: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  #contac_form{
+      height: auto;
+      font-family: 'Lato', sans-serif;
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+  }
+  #contac_form input{
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 0.8rem;
+  }
+  #contac_form textarea{
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 0.8rem;
+  }
+  #footer{
+      /* background-color: #53284F; */
+      width: 100%
+  }
+  #footer-inner {
+      margin: auto;
+      text-align: center;
+      /* padding: 12px; */
+      font-size: 8pt;
+  }
+  footer .img{
+      vertical-align: middle;
+  }
+  .item img{
+    width: 100vw;
+    height: 450px;
+    object-fit: contain;
+  }
+  .obj-fit{
+    width: 100vw;
+    height: 450px;
+    object-fit: cover;
+  }
