@@ -1,24 +1,22 @@
 import React from 'react';
-import CarouselList from '../constants/carouselConstants'
 
-const Carousel = () => {
+const Carousel = (props) => {
     let classItem = "";
-
     return (
         <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-ride="carousel">
             <ol className="carousel-indicators">
                 {
-                    CarouselList.map((indicator, i) => {
+                    props.routeUrl.map((indicator, i) => {
 
                         return (
-                            <li data-target="#carouselExampleIndicators" data-slide-to={i} className="active"></li>
+                            <li key={i} data-target="#carouselExampleIndicators" data-slide-to={i} className="active"></li>
                         )
                     })
                 }
             </ol>
             <div className="carousel-inner mycarousel mycarrousel">
                 {
-                    CarouselList.map((img, i) => {
+                    props.routeUrl.map((img, i) => {
                         if (i === 0) {
                             classItem = "active";
                         }
@@ -26,7 +24,7 @@ const Carousel = () => {
                             classItem = ""
                         }
                         return (
-                            <div className={"carousel-item " + classItem}>
+                            <div  key={i} className={"carousel-item " + classItem}>
                                 <img src={img} className="d-block" alt="..." />
                             </div>
                         )
