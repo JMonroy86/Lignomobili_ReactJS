@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <>
-            <Carousel routeUrl={CarouselList.home}/>
+            <Carousel routeUrl={CarouselList.home} carouselVal="0" />
             <div className="container pt-5 pb-5" id="products">
                 <h1 className="display-4 blue">Productos y Servicios</h1>
                 <div className="row pt-4">

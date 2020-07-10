@@ -14,6 +14,9 @@ const Navbar = () => {
     else if(location.pathname === "/Nosotros"){
         classItem1 = "active";
     }
+    else if(location.pathname === "/Servicios"){
+        classItem3 = "active";
+    }
     return (
         <header className="header fixed-top">
             <nav id="navbar" className="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
@@ -35,8 +38,8 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/">Proyectos</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/">Productos y Servicios</Link>
+                        <li className={"nav-item "+classItem3}>
+                            <Link className="nav-link" to="/Servicios">Productos y Servicios</Link>
                         </li>
                     </ul>
                     <ul className="nav list-inline">

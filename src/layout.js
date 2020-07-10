@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.css'; 
-// Add js files
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
@@ -12,6 +11,7 @@ import Home from './view/home'
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import About from './view/about';
+import Services from './view/services';
 
 
 
@@ -24,6 +24,7 @@ const Layout = () => {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/Nosotros" component={About} />
+                    <Route exact path="/Servicios" component={Services} />
                 </Switch>
                 <Footer />
 
