@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from '../constants/propductsConstants'
+import { Link } from 'react-router-dom'
 
 
 const CardProduct = () => {
@@ -13,7 +14,7 @@ const CardProduct = () => {
                 <img src={item.img} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">{item.name}</h5>
-                  <a className="" href={"/Productos/"+item.url}>Galería de imágenes</a>
+                  <Link className="" to={"/Productos/"+item.url}>Galería de imágenes</Link>
                 </div>
               </div>
             </div>

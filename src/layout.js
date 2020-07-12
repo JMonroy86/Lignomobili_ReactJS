@@ -12,6 +12,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import About from './view/about';
 import Services from './view/services';
+import Product from './view/products';
 
 
 
@@ -25,6 +26,7 @@ const Layout = () => {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/Nosotros" component={About} />
                     <Route exact path="/Servicios" component={Services} />
+                    <Route exact path="/Productos/:id" component={Product}  />
                 </Switch>
                 <Footer />
 

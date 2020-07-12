@@ -6,7 +6,7 @@ const Navbar = () => {
     let location = useLocation();
     let classItem = "";
     let classItem1 = "";
-    let classItem2 = "";
+    // let classItem2 = "";
     let classItem3 = "";
     if(location.pathname === "/"){
         classItem = "active";
@@ -21,7 +21,7 @@ const Navbar = () => {
         <header className="header fixed-top">
             <nav id="navbar" className="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
                 <Link className="navbar-brand" to="/">
-                    <img src="img/LOGO_CMP_LM.png" width="150" height="60" className="d-inline-block align-top" alt="" />
+                    <img src="../img/LOGO_CMP_LM.png" width="150" height="60" className="d-inline-block align-top" alt="" />
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@ const Navbar = () => {
                             <Link className="nav-link" to="/Nosotros">Nosotros</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Proyectos</Link>
+                            <Link className="nav-link" to="/Productos/Proyectos">Proyectos</Link>
                         </li>
                         <li className={"nav-item "+classItem3}>
                             <Link className="nav-link" to="/Servicios">Productos y Servicios</Link>

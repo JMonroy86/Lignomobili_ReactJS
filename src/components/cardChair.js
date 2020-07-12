@@ -18,7 +18,7 @@ const CardChair = (props) => {
                         (
                             props.chairItem.colors.map((classNameColor, i) => {
                                 return (
-                                    <>
+                                    
                                         <div key={i} className="col-3">
                                             <a className="text-decoration-none" data-toggle="modal" data-target={"#" + classNameColor.target}>
                                                 <div className={classNameColor.color}>
@@ -32,7 +32,7 @@ const CardChair = (props) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </>
+                                    
                                 )
                             })
                         )
