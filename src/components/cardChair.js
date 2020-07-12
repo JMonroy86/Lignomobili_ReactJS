@@ -2,7 +2,6 @@ import React from 'react';
 import Carousel from '../components/carousel';
 
 const CardChair = (props) => {
-    console.log(props)
     return (
         <div className="col-lg-3 col-md-6 col-sm-12 mycard pt-3 pb-3 m-3">
             <div className="col-12">
@@ -20,7 +19,7 @@ const CardChair = (props) => {
                                 return (
                                     
                                         <div key={i} className="col-3">
-                                            <a className="text-decoration-none" data-toggle="modal" data-target={"#" + classNameColor.target}>
+                                            <a className="text-decoration-none" data-toggle="modal" href="#" data-target={"#" + classNameColor.target}>
                                                 <div className={classNameColor.color}>
                                                 </div>
                                             </a>

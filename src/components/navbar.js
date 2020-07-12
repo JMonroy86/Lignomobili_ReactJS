@@ -1,20 +1,23 @@
 import React from 'react';
-import { Link, useLocation} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Navbar = () => {
     let location = useLocation();
     let classItem = "";
     let classItem1 = "";
-    // let classItem2 = "";
+    let classItem2 = "";
     let classItem3 = "";
-    if(location.pathname === "/"){
+    if (location.pathname === "/") {
         classItem = "active";
     }
-    else if(location.pathname === "/Nosotros"){
+    else if (location.pathname === "/Nosotros") {
         classItem1 = "active";
     }
-    else if(location.pathname === "/Servicios"){
+    else if (location.pathname === "/Productos/Proyectos") {
+        classItem2 = "active";
+    }
+    else if (location.pathname === "/Servicios") {
         classItem3 = "active";
     }
     return (
@@ -29,16 +32,16 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto title">
-                        <li className={"nav-item "+classItem}>
+                        <li className={"nav-item " + classItem}>
                             <Link className="nav-link" to="/">Inicio <span className="sr-only">(current)</span></Link>
                         </li>
-                        <li className={"nav-item "+classItem1}>
+                        <li className={"nav-item " + classItem1}>
                             <Link className="nav-link" to="/Nosotros">Nosotros</Link>
                         </li>
-                        <li className="nav-item">
+                        <li className={"nav-item " + classItem2}>
                             <Link className="nav-link" to="/Productos/Proyectos">Proyectos</Link>
                         </li>
-                        <li className={"nav-item "+classItem3}>
+                        <li className={"nav-item " + classItem3}>
                             <Link className="nav-link" to="/Servicios">Productos y Servicios</Link>
                         </li>
                     </ul>

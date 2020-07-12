@@ -9,7 +9,7 @@ const CardProduct = () => {
       {
         Product.map((item, i) => {
           return (
-            <div className="col-md-3 p-2">
+            <div key={i} className="col-md-3 p-2">
               <div className="card">
                 <img src={item.img} className="card-img-top" alt="..." />
                 <div className="card-body">
