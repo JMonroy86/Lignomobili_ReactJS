@@ -49,7 +49,6 @@ const Navbar = () => {
                         <li className="list-inline-item">
                             <a href="#"><i className="fab fa-facebook fa-fw fa-1x"></i></a>
                         </li>
-
                         <li className="list-inline-item">
                             <a href="#"><i className="fab fa-instagram fa-fw fa-1x"></i></a>
                         </li>
